@@ -1,0 +1,82 @@
+/*nullstyle*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/*--------------------*/
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	background-color: rgb(191, 197, 202);
+}
+
+.board {
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: center;
+}
+
+.square {
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(191, 197, 202);
+	background-color: rgb(140, 140, 140);
+	transition: all 0.3s ease;
+}
+
+div[data-is-colored='0'] {
+	background-color: rgb(140, 140, 140);
+}
+
+div[data-is-colored='1'] {
+	background-color: rgb(147, 176, 208);
+}
+
+div[data-has-water='1'] {
+	background-color: rgb(23, 92, 167);
+	transition: all 0.3s ease;
+}
+
+.totalVolume {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 54px;
+	margin-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: rgb(191, 197, 202);
+	border: 2px solid rgb(164, 182, 199);
+	color: rgb(95, 86, 86);
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
